@@ -9,6 +9,7 @@
 * R을 이용한 간단한 연산<br>
 ![R설치 확인](https://user-images.githubusercontent.com/80237099/225614556-427ab41b-a08f-49aa-8af7-1c90bab37312.PNG)
 <br>
+
 * R Studio를 이용한 간단한 연산<br>
 ![RStudio설치 확인](https://user-images.githubusercontent.com/80237099/225615292-ff1d11f6-ddef-4197-8879-fb3065680436.PNG)
 <br>
