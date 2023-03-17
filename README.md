@@ -42,10 +42,10 @@
 <br>
 
 ####  #tip 
- MD file 최근 내용이 위로 올라오도록 작성<br>
- Ctrl + Enter = Commit(R Studio)<br>
- console에서 괄호()를 안 닫았을 때 이어서 문서 완성 가능<br>
- 소스 코딩에서 ;은 Enter와 대응
+``` MD file 최근 내용이 위로 올라오도록 작성```<br>
+```Ctrl + Enter = Commit(R Studio)```<br>
+```console에서 괄호()를 안 닫았을 때 이어서 문서 완성 가능```<br>
+```소스 코딩에서 ;은 Enter와 대응```
 
 ***
 
