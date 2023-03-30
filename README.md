@@ -2,6 +2,46 @@
 
 <br>
 
+## 2023-03-30
+
+## #현황 
+* 간단한 산술 계산
+
+## #자료
+### 자료의 종류
+![0](https://user-images.githubusercontent.com/80237099/228809731-47af5997-4616-45cc-987b-12b412219766.PNG)<br>
+![1](https://user-images.githubusercontent.com/80237099/228809742-053ec002-f3bc-4ef0-be50-03dba5f5ee8e.PNG)<br>
+![2](https://user-images.githubusercontent.com/80237099/228809744-6d4137fe-5e99-47bc-a55c-07f489f7891d.PNG)<br>
+<br> 
+
+### 1차원 자료
+* 벡터(vector)
+* 리스트(list)
+* 펙터(factor)
+
+### 2차원 자료
+* 매트릭스(matrix)
+* 데이터프레임(data frame)
+
+### #범주형 자료와 수치형 자료
+**범주형 자료 : '분류'의 의미를 갖는 값들로 구성된 자료로, 보통 문자로 표현되고 산술연산을 적용할 수 없음.**
+
+**수치형 자료 : 값들이 크기를 가지며 산술연산이 가능함**
+
+### #벡터에 사용 가눙한 함수들
+![1](https://user-images.githubusercontent.com/80237099/228816863-38b680be-82c2-4617-9b98-27369b3ac779.PNG)
+<br>
+
+
+####  #tip 
+1. ls 변수 리스트 확인
+2. rm remove
+3. rm(list = ls()) 모든 리스트 remove<br>
+![ls1](https://user-images.githubusercontent.com/80237099/228809080-a165ed3c-ffcd-498e-8930-6bf5d0e80750.PNG)
+<br>
+
+***
+
 ## 2023-03-23
 
 ## #현황 
