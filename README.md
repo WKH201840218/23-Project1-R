@@ -66,6 +66,7 @@
 1. A <- min(변수명) : 변수중 제일 작은 수
 2.  B <- max(변수명) : 변수중 제일 큰 수
 <br>
+
 ![24](https://user-images.githubusercontent.com/80237099/230364536-9a3f00a5-9cc4-430b-bdb0-1fe33284e0a7.PNG)
 <br>
 
