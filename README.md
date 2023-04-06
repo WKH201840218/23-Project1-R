@@ -17,22 +17,21 @@
 <br>
 
 
-### #iris 데이터셋 
+### #iris 데이터셋
+1. 
 * Sepal.Length 숫자형
 * Spal.Width 숫자형
 * Patal.Length 숫자형
 * Petal.Width 숫자형
 * Species 문자형(벡터)
-<br>
-<br>
+2.
 * dim(iris) 행과 열의 개수 보이기
 * nrow(iris) 행의 개수 보이기
 * ncol(iris) 열의 개수 보이기
 * colnames(iris) 열 이름 보이기, names() 함수와 결과 동일
 * head(iris) 데이터셋의 앞부분 일부 보기
 * tail(iris) 데이터셋의 윗부분 일부 보기
-<br>
-<br>
+3.
 * str(iris) 데이터셋 요약 정보 보기
 * iris[,5] 품종 데이터 보기
 * levels(iris[,5]) 품종의 종류 보기(중복 제거)
