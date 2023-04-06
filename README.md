@@ -2,6 +2,74 @@
 
 <br>
 
+## 2023-04-06
+
+## #현황 
+* iris 데이터셋 연산
+* 매트릭스와 데이터프레임에 함수 적용
+
+<br>
+
+
+## #데이터프레임(data frame)
+**매트릭스와 마찬가지로 2차원 형태의 데이터를 저장하고 분석하는데 사용되는 자료구조**
+
+<br>
+
+
+### #iris 데이터셋 
+* Sepal.Length 숫자형
+* Spal.Width 숫자형
+* Patal.Length 숫자형
+* Petal.Width 숫자형
+* Species 문자형(벡터)
+<br>
+<br>
+* dim(iris) 행과 열의 개수 보이기
+* nrow(iris) 행의 개수 보이기
+* ncol(iris) 열의 개수 보이기
+* colnames(iris) 열 이름 보이기, names() 함수와 결과 동일
+* head(iris) 데이터셋의 앞부분 일부 보기
+* tail(iris) 데이터셋의 윗부분 일부 보기
+<br>
+<br>
+* str(iris) 데이터셋 요약 정보 보기
+* iris[,5] 품종 데이터 보기
+* levels(iris[,5]) 품종의 종류 보기(중복 제거)
+* table(iris[,"Species"]) 품종의 종료별 행의 개수 세기
+<br>
+![21](https://user-images.githubusercontent.com/80237099/230359037-3e2335a1-1687-4ab8-b97e-fd4a2ea3c352.PNG)<br>
+![22](https://user-images.githubusercontent.com/80237099/230359040-ee9aff72-0ea4-4970-a5b9-7ba4d5257e13.PNG)<br>
+<br>
+### #행별, 열별로 합계와 평균 계산하기
+* colSums(itis[,-5]) 열별 합계
+* colMeans(itis[,-5]) 열별 평균
+* rowSums(itis[,-5]) 행별 합계
+* rowMeans(itis[,-5]) 행별 평균
+
+### #매트릭스와 데이터프레임에 함수 적용
+**조건에 맞는 행과 열의 값 추출하기**
+* iris : 데이터를 추출하는 대상이 iris 데이터셋
+* Species=='setosa' : 데이터를 추출할 조건을 지정하는 부분으로, 품종 열의 값이 'setosa'인 행만 추출하라는 의미
+
+**매트릭스와 데이터프레임의 자료구조 확인하기**
+* class(iris) iris 데이터셋의 자료구조 확인
+* class(state.x77) state.x77 데이터셋의 자료구조 확인
+* is.matrix(iris) 데이터셋이 매트릭스인지 확인하는 함수
+* is.data.frame(iris) 데이터셋이 데이터프레임인지 확인하는 함수
+* is.matrix(state.x77)
+* ix.data.frame(state.x77)
+
+
+
+
+
+####  #tip 
+1. IR.1에는 iris의 전채 150개의 행 중 조건에 맞는 50개의 행만 저장
+2. is.(code)는 확인(T/F)확인용 변수 
+
+***
+
 ## 2023-03-30
 
 ## #현황 
