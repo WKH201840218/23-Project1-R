@@ -39,6 +39,7 @@
 * table(iris[,"Species"]) 품종의 종료별 행의 개수 세기
 
 ![21](https://user-images.githubusercontent.com/80237099/230359037-3e2335a1-1687-4ab8-b97e-fd4a2ea3c352.PNG)<br>
+
 ![22](https://user-images.githubusercontent.com/80237099/230359040-ee9aff72-0ea4-4970-a5b9-7ba4d5257e13.PNG)<br>
 <br>
 ### #행별, 열별로 합계와 평균 계산하기
