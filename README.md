@@ -61,6 +61,7 @@
 * is.matrix(state.x77)
 * ix.data.frame(state.x77)
 
+<br>
 
 ### #R에서의 입력과 출력
 1. A <- min(변수명) : 변수중 제일 작은 수
