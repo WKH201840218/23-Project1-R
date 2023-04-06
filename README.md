@@ -7,6 +7,7 @@
 ## #현황 
 * iris 데이터셋 연산
 * 매트릭스와 데이터프레임에 함수 적용
+* R에서의 입력과 출력
 
 <br>
 
@@ -59,6 +60,14 @@
 * is.data.frame(iris) 데이터셋이 데이터프레임인지 확인하는 함수
 * is.matrix(state.x77)
 * ix.data.frame(state.x77)
+
+
+### #R에서의 입력과 출력
+1. A <- min(변수명) : 변수중 제일 작은 수
+2.  B <- max(변수명) : 변수중 제일 큰 수
+<br>
+![24](https://user-images.githubusercontent.com/80237099/230364536-9a3f00a5-9cc4-430b-bdb0-1fe33284e0a7.PNG)
+<br>
 
 
 
