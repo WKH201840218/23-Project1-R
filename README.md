@@ -2,6 +2,79 @@
 
 <br>
 
+## 2023-04-13
+
+## #현황 
+* 
+
+**가**
+
+
+## #파일 입출력
+1. setwd('C:/Rwork') 작업 폴터 지정
+2. getwd() setwd() 출력
+3. print('code') 화면으로 출력
+4. sink('result.txt', append = T) 파일 출력 시작
+5. sink() 파일 출력 정지
+6. head(airquality) -> view(airquality) airquality파일 출력
+
+### #if-else문
+**조건문(conditional statement) : 조건에 따라 실행할 명령문**
+
+```
+if (비교 조건) { 
+조건이 참일 때 실행할 명령문들
+} else {
+조건이 거짓일 때 실행할 명령문들
+}
+```
+#### 실적용
+```
+job.type <- 'a'
+if(job.type == 'b') {
+  bonus <- 200
+} else {
+  bonus <- 100
+} 
+print(bonus)
+```
+
+### #for문
+* **반복 범위는 반복 변수에 할당할 값을 모아둔 벡터로 이 벡터의 길이만큼 for문은 반복됨**
+* **for문이 한 번씩 수행될 때마다 반복 범위의 값을 하나씩 가져와 반복 변수에 저장한 뒤 코드블록안에 있는 명령문을 실행함**
+```
+for (반복 변수 in 반복 범위) {
+  반복할 명령문들
+}
+```
+#### 실적용
+```
+for(i in 1:5) {
+  print(i)
+}
+```
+
+
+
+
+
+####  #tip 
+1. while문
+```
+sum <- 0
+i <- 1
+while(i <= 100) {    # sum에 i 값을 누적
+ sum <- sum + i      # i 값을 1 증가시킴
+ i <- i + 1
+}
+print(sum) 
+```
+<br>
+
+***
+
+<br>
+
 ## 2023-04-06
 
 ## #현황 
@@ -84,6 +157,16 @@
 ####  #tip 
 1. IR.1에는 iris의 전채 150개의 행 중 조건에 맞는 50개의 행만 저장
 2. is.(code)는 확인(T/F)확인용 변수 
+3. library code
+``` 
+library(svDialogs)
+user.input <- dlginput('Input icome')$res
+user.input
+income <- as.numeric(user.input)
+income
+tax <- income * 0.05
+cat('세금: ', tax)
+``` 
 
 ***
 
