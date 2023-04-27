@@ -47,6 +47,7 @@ hist(dist,
      las=2,
      breaks = 5)
 ```
+#### Coding2
 ```R
 hist(iris$Sepal.Length,
      main = 'Sepal.Length',
