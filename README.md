@@ -7,6 +7,7 @@
 ## #현황 
 * 막대그래프 진행
 * 히스토그램 진행
+* 원그래프 선그래프
 
 <br>
 
@@ -70,6 +71,38 @@ pie(table(mtcars$cyl),
 par(mfrow=c(1,1), mar=c(5,4,4,2)+.1)
 ```
 
+<br>
+
+### #원그래프와 선그래프
+* **원그래프 : 하나의 원 안에 데이터 값이 자지하는 비율을 넓일 나타낸 그래프**
+#### Coding
+```R
+install.packages('plotrix')
+
+library(plotrix)
+
+favorite <- c('WINTER', 'SUMMER', 'SPRING', 'FALL')
+ds <- table(favorite)
+ds
+pie3d(ds, main = '선호 계절',
+    col=c('orange','green','red','black'),
+          raidus=1)
+```
+
+* **선그래프는 연도별 인구 증사 추이와 같은 시간의 변화에 따라 수집된 데이터를 시각화하는데 주로 사용**
+#### Coding
+```R
+month <- 1:12
+late <- c(2,4,3,4,2,5,8,2,3,11,4)
+plot(month,
+     late,
+     main='지각생 통계',
+     type='3',
+     lty=1,
+     lwd=1,
+     xlab='Month',
+     ylab='Late cnt') #미완성 여기까지 진도
+```
 
 <br>
 

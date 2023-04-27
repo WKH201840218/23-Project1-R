@@ -1,22 +1,11 @@
-head(cars)
-dist <- cars[,2]
-dist
-hist(iris$Sepal.Length,
-     main = 'Sepal.Length',
-     col='orange')
-     
-barplot(table(mcars$cyl),
-        main='mtcars',
-        col=c('red','green','blue'))
+month <- 1:12
+late <- c(2,4,3,4,2,5,8,2,3,11,4)
+plot(month,
+     late,
+     main='지각생 통계',
+     type='3',
+     lty=1,
+     lwd=1,
+     xlab='Month',
+     ylab='Late cnt')
 
-barplot(table(mtcars$gear),
-        main='mtcars',
-        col=rainbow(3),
-        horiz=TRUE)
-
-pie(table(mtcars$cyl),
-    main='mtcars',
-    col=topo.colors(3),
-    radius = 2)
-
-par(mfrow=c(1,1), mar=c(5,4,4,2)+.1)
