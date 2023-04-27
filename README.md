@@ -2,6 +2,63 @@
 
 <br>
 
+## 2023-04-27
+
+## #현황 
+* 막대그래프 진행
+* 히스토그램 진행
+
+<br>
+
+### #막대그래프
+
+#### Coding
+```R
+#데이터 입력
+age.A <- c(13709, 10222, 7222, 5222, 4222)
+age.B <- c(17709, 29022, 36222, 32322, 22222)
+age.C <- c(999, 2102, 5222, 12222, 19222)
+
+ds <- rbind(age.A, age.B, age.C)
+colnames(ds) <- c('1970', '1990', '2010', '2030', '2050')
+ds
+
+#그래프 작성
+barplot(ds, main='인구 추정', col = rainbow(3), beside = T, legend.text = T)
+```
+
+<br>
+
+### #히스토그램
+**히스토그램은 외관상 막대그래프와 비슷한 그래프로, 그룹이 명시적으로 존재하지 않은 수치형 자료의 분포를 시각화할 떄 사용함**
+
+
+#### Coding
+```R
+head(cars)
+dist <- cars[,2]
+dist
+hist(dist,
+     main='Histogarm for 제동거리',
+     xlab = '제동거리',
+     ylab = '빈도수',
+     border='blue',
+     col='green',
+     las=2,
+     breaks = 5)
+```
+
+
+<br>
+
+####  #tip 
+1. col = rainbow(4) 막대그래프 4색 배치, col=c('red','green','blue') 임의의 색 배치
+
+<br>
+
+***
+
+
 ## 2023-04-13
 
 ## #현황 
