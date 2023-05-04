@@ -2,6 +2,60 @@
 
 <br>
 
+## 2023-05-04
+
+## #현황 
+* 
+
+<br>
+
+### #상자그림(box plot)
+
+**상자그림
+(box plot)사분위수를 시각화하여 그래프 형태로 나타낸 것으로, 하나의 그래프로 데이터의 분포 등 다양한 정보 전달하여 단일 변수수치형 자료를 파악하는데 자주 사용**
+#### Coding
+```R
+dist <- cars[,2]
+boxplot(dist, main='자동차 제동거리')
+```
+
+```R
+> boxplot.stats(dist)
+$stats
+[1]  2 26 36 56 93
+
+$n
+[1] 50
+
+$conf
+[1] 29.29663 42.70337
+
+$out
+[1] 120
+```
+![041](https://user-images.githubusercontent.com/80237099/236182793-2e5d0060-d8ca-47a2-ac3e-79f910aadbab.PNG)
+
+#### Coding2
+```R
+dist <- cars[,2]
+boxplot(Petal.Length~Species,
+        data=iris,
+        main='품종별 꽃잎의 길이',
+        col=c('green', 'yellow', 'orange')
+        )
+```
+![042](https://user-images.githubusercontent.com/80237099/236184057-0b4542b9-21b4-4008-b0b8-8e0a444b806e.PNG)
+
+<br>
+
+####  #tip 
+1. 
+
+<br>
+
+***
+
+
 ## 2023-04-27
 
 ## #현황 
