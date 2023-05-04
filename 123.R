@@ -1,6 +1,4 @@
-dist <- cars[,2]
-boxplot(Petal.Length~Species,
-        data=iris,
-        main='Ç°Á¾º° ²ÉÀÙÀÇ ±æÀÌ',
-        col=c('green', 'yellow', 'orange')
-        )
+vars <- c('mpg','dist','drat','wt')
+target <- mtcars[,vars]
+head(target)
+plot(target,main='Multi plots')

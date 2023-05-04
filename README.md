@@ -5,14 +5,13 @@
 ## 2023-05-04
 
 ## #현황 
-* 
+* box plot, scatter plot 진행
 
 <br>
 
-### #상자그림(box plot)
+### #상자그림
+**상자그림(box plot)사분위수를 시각화하여 그래프 형태로 나타낸 것으로, 하나의 그래프로 데이터의 분포 등 다양한 정보 전달하여 단일 변수수치형 자료를 파악하는데 자주 사용**
 
-**상자그림
-(box plot)사분위수를 시각화하여 그래프 형태로 나타낸 것으로, 하나의 그래프로 데이터의 분포 등 다양한 정보 전달하여 단일 변수수치형 자료를 파악하는데 자주 사용**
 #### Coding
 ```R
 dist <- cars[,2]
@@ -48,8 +47,40 @@ boxplot(Petal.Length~Species,
 
 <br>
 
+### #산점도 
+**산점도(scatter plot) 다중변수 데이터에서 두 변수에 포함된 값들을 2차원 그래프상에 점을 표현하여 분포를 관찰할 수 있도록 하는 도구**
+#### Coding
+```R
+wt <- mtcars$wt
+mpg <- mtcars$mpg
+plot(wt, mpg,
+        main='중량-연비 그래프',
+        xlab='중량',
+        ylab='연비',
+        col=c('blue'),
+        pch=20
+        )
+```
+![043](https://user-images.githubusercontent.com/80237099/236186408-2ebb9fd8-1347-4e21-889a-b092d362263f.PNG)
+#### Coding2
+```R
+vars <- c('mpg','disp','drat','wt')
+target <- mtcars[,vars]
+head(target)
+plot(target,
+     main='Multi plots')
+```
+![044](https://user-images.githubusercontent.com/80237099/236188133-2d163f45-4a8e-4d73-99a5-6eab82ad8f59.PNG)
+
+
+<br>
+
 ####  #tip 
-1. 
+1. console 입력으로 변화된 plot 결과값 출력가능
+plot(iris, main='change') <br>
+![46c75177-bea1-46b0-b387-832acb8682d8](https://user-images.githubusercontent.com/80237099/236189176-d2b6a3d4-93ba-4b22-9b9c-fef56338cc03.png)
+
+
 
 <br>
 
