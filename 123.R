@@ -1,11 +1,6 @@
-iris.2 <- iris[,3:4]
-group <- as.numberic(iris$Species)
-color <- c('red','green', 'blue')
-plot(iris.2,
-     main='iris plot',
-     pch=c(group),
-     col=color[group])
-legend(x='bottomright',
-       legend = levels(iris$Species),
-       col = c('red','green', 'blue'),
-       pch=c(1:3))
+z1 <- c(1,2,3,NA,6,NA,7)
+z2 <- c(4,5,2,NA,7,NA,8)
+z1[is.na(z1)] <- 0
+z1
+z3 <- as.vector(na.omit(z2))
+z3
