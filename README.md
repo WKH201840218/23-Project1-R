@@ -72,7 +72,7 @@ sample(1:20, size=5)
 
 
 ### #조합
-**조합(combination): 주어진 데이터값 중에서 몇 개씩 짝을 지어 추출하는 작업으로, combn() 함수를 사용함**
+**조합(combination): 주어진 데이터값 중에서 몇 개씩 짝을 지어 추출하는 작업으로, combn() 함수를 사용**
 #### Coding
 ```R
 combn(1:5,4)
@@ -91,6 +91,33 @@ for(i in 1:ncol(com)) {
 ```R
 agee <- aggregate(mtcars, by=list(cyl=mtcars$cyl, vs=mtcars$vs),FUN = max)
 ```
+
+<br>
+
+### #나무지도
+**사각타일의 형태로 표현 데이터를 정보를 타일의 크기와 색깔로 나타내며, treemap패키지 설치 후 사용**
+
+**데이터 시각화(data visualization): 데이터 분석 과정에서 중요한 기술중 하나**
+* 데이터가 저장하고 있는 정보나 의미를 보다 쉽게 파악할 수 있음
+* 시각화 결과로부터 중요한 영감을 얻기도 함
+#### Coding
+```R
+install.packages('treemap')
+library(treemap)
+
+data(GNI2014)
+head(GNI2014)
+
+treemap(GNI2014,
+        index=c('continent','iso3'),
+        vSize='population',
+        vColor='GNI',
+        type='value',
+        bg.labels='yellow', #error메세지 출력시 제거
+        title="World's GNI")
+```
+![23](https://github.com/WKH201840218/23-Project1-R/assets/80237099/40c4aaea-0b60-4ce2-8547-dcc6a5ed751a)
+
 
 <br>
 

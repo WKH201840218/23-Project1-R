@@ -1,10 +1,13 @@
-combn(1:5,4)
+install.packages('treemap')
+library(treemap)
 
-x <- c("orange", "red", "blue", "yellow")
-com <- combn(x,2)
+data(GIN2014)
+head(GIN2014)
 
-for(i in 1:ncol(com)) {
-  cat(com[,i], "\n")
-}
-
-agee <- aggregate(mtcars, by=list(cyl=mtcars$cyl, vs=mtcars$vs),FUN = max())
+treemap(GIN2014,
+        index=c('continent','iso3'),
+        vSize='population',
+        vColor='GNI',
+        type='value',
+        bg.labels='yellow',
+        title="World's GNI")
