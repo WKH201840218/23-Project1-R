@@ -5,6 +5,64 @@
 ## 2023-05-11
 
 ## #현황 
+* 정렬 진행
+
+<br>
+
+### #정렬
+**정렬은 주어진 기준에 따라 데이털 크기순으로 재배열하는 과정**
+* 숫자의 경우 숫자의 크기에 따라 정렬 가능
+* 문자열의 경우 알파벳순 따라 가나다순으로 정렬 가능
+* sort() 함수: 값의 크기에 따라 값들을 정렬하는 함수
+* order() 함수: 값의 크기에 따라 값들의 인덱스를 정렬하는 함수
+#### Coding
+```R
+name <- c('정대','강재','신현','길동') #name 정의
+sort(name)
+name
+sort(name, decreasing = T) #내림차순
+order(name)
+order(name, decreasing = F) #오름차순
+idx <- order(name)
+name[idx] #name 함수 값 출력
+```
+**매트릭스와 데이터프레임의 정렬**
+* 특정 열의 값들을 기준으로 행을 재배열하는 방법
+* iris 데이터셋에서 꽃잎의 길이를 기준을 행으로 재정렬하는 예
+#### Coding
+```R
+head(iris)
+order(iris$Sepal.Length)
+iris[order(iris$Sepal.Length),]
+iris[order(iris$Sepal.Length, decreasing = T),]
+iris.new <- iris[order(iris$Sepal.Length),]
+head(iris.new)
+```
+<br>
+
+### #샘플링
+**샘플링 주어진 값들에서 임의의 개수 만큼 값을 추출하는 작업**
+#### 여러번 값을 추출할 때,
+* **비복원 추출: 한번 뽑은 값을 제이한 뒤 새로운 값을 추출하는 방식**
+* **복원 추출: 뽑았던 값을 다시 포함싴 새로운 값을 추출하는 방식**
+#### 샘플링이 필요한 떄
+* 데이터셋이 너무 커 분석에 시간이 많이 걸리는 경우 일부의 데이터만 추출하여 대략의 결과를 미리 확인
+#### Coding
+```R
+x <- 1:100
+y <- sample(x, size = 10, replace = FALSE)  #비복원 추출
+y #FALSE비복원 추출, TRUE복원 추출
+```
+
+<br>
+
+####  #tip 
+1. 정렬 False 오름차순, True 내림차순
+
+***
+## 2023-05-11
+
+## #현황 
 * 다중변수 진행
 * 결측값 진행
 
