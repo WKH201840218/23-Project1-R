@@ -6,11 +6,13 @@
 
 ## #현황 
 * 정렬 진행
+* 샘플링 및 조합 진행
+* 집계 진행
 
 <br>
 
 ### #정렬
-**정렬은 주어진 기준에 따라 데이털 크기순으로 재배열하는 과정**
+**정렬(sorting)은 주어진 기준에 따라 데이털 크기순으로 재배열하는 과정**
 * 숫자의 경우 숫자의 크기에 따라 정렬 가능
 * 문자열의 경우 알파벳순 따라 가나다순으로 정렬 가능
 * sort() 함수: 값의 크기에 따라 값들을 정렬하는 함수
@@ -52,6 +54,42 @@ head(iris.new)
 x <- 1:100
 y <- sample(x, size = 10, replace = FALSE)  #비복원 추출
 y #FALSE비복원 추출, TRUE복원 추출
+```
+#### Coding2
+```R
+idx <- sample(1:nrow(iris), size=50, replace=F)
+iris.50 <- iris[idx,]
+dim(iris.50)
+head(iris.50)
+
+sample(1:20, size=7) #랜덤출력
+
+set.seed(100)
+sample(1:20, size=5)
+```
+
+<br>
+
+
+### #조합
+**조합(combination): 주어진 데이터값 중에서 몇 개씩 짝을 지어 추출하는 작업으로, combn() 함수를 사용함**
+#### Coding
+```R
+combn(1:5,4)
+
+x <- c("orange", "red", "blue", "yellow")
+com <- combn(x,2)
+
+for(i in 1:ncol(com)) {
+  cat(com[,i], "\n")
+}
+```
+<br>
+
+### #집계
+**집계(aggregation): 데이터의 그룹에 대해서 합계나 평균을 계산하는 작업으로, aggregate()함수 사용**
+```R
+agee <- aggregate(mtcars, by=list(cyl=mtcars$cyl, vs=mtcars$vs),FUN = max)
 ```
 
 <br>
