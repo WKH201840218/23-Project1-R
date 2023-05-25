@@ -1,13 +1,7 @@
-install.packages('treemap')
-library(treemap)
+install.packages("wordcloud")
+library(wordcloud)
 
-data(GIN2014)
-head(GIN2014)
+word <- c("김유신", "강감찬", "을지문덕", "안중근")
+frequency <- c(651, 222, 431, 432, 622, 721)
 
-treemap(GIN2014,
-        index=c('continent','iso3'),
-        vSize='population',
-        vColor='GNI',
-        type='value',
-        bg.labels='yellow',
-        title="World's GNI")
+wordcloud(word, frequency, colors = "blue")

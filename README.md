@@ -2,6 +2,37 @@
 
 <br>
 
+## 2023-05-25
+
+## #현황 
+* 마무리 및 정리
+
+<br>
+
+### #과목 점수 데이터
+```R
+install.packages('fmsb') #패키지 인스톨
+library(fmsb) #라이브러리
+
+score <- c(80,60,95,85,40) #점수
+max.score <- rep(100,5) #점수 최대값
+min.score <- rep(0,5) # 점수 최소값
+ds <- rbind(max.score, min.score, score) # 이건 뭘까
+ds <- data.frame(ds) # 이건 뭐지
+colnames(ds) <- c('국어','영어','수학','역사','음악' ) # 과목 명 ds변수에 대입
+ds # 변수 출력(값)
+
+radarchart(ds) # plot출력
+```
+
+<br>
+
+####  #tip 
+1. install, library 준비 install중복시 알림
+2. R은 rgb(255,255,255,1.0) 1.0은 투명도
+3. ggplot2(라이브러리) 적극 활용
+
+***
 ## 2023-05-18
 
 ## #현황 
